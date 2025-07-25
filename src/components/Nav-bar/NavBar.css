@@ -1,0 +1,87 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00df9a;
+}
+
+.hire-btn {
+  padding: 8px 16px;
+  background-color: #00df9a;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* ------------------- Responsive ------------------- */
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  z-index: 2;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* عند الشاشات الصغيرة */
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #0f172a;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .hire-btn {
+    display: none;
+  }
+}

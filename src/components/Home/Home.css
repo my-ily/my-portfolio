@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+/* في index.css أو global */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#home{
+  min-height: 100vh;
+}
+
+.main-container {
+  padding: 60px 50px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.main-container h1 {
+  font-size: 4.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  color: #00df9a;
+}
+
+.main-container h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #cbd5e1;
+}
+
+.main-container p {
+  font-size: 1rem;
+  margin-top: 10px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #94a3b8;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #00df9a;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #00c388;
+}
+
+.download-btn {
+  margin-top: 30px;
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00df9a;
+  color: #0f172a;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-bottom: 200px;
+}
+
+.download-btn:hover {
+  background-color: #00c388;
+}
+
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 4rem 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.skills-section {
+  text-align: center;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #00d9ff;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  font-size: 3rem; /* تم تكبير الحجم هنا */
+}
+
+.icons svg {
+  transition: transform 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.icons svg:hover {
+  transform: scale(1.3);
+  color: #00d9ff;
+}
+/* Respoinsive */
+/* Responsive Design */
+
+/* الشاشات الصغيرة مثل الجوال */
+@media (max-width: 600px) {
+  .main-container {
+    padding: 40px 20px;
+  }
+
+  .main-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-container h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-container p {
+    font-size: 0.9rem;
+  }
+
+  .download-btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .icons {
+    gap: 1rem;
+    font-size: 2.2rem;
+    flex-wrap: wrap;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* الشاشات المتوسطة مثل التابلت */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 50px 30px;
+  }
+
+  .main-container h1 {
+    font-size: 3.2rem;
+  }
+
+  .main-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .download-btn {
+    font-size: 1rem;
+    padding: 11px 22px;
+  }
+
+  .icons {
+    font-size: 2.8rem;
+    gap: 1.5rem;
+  }
+}
+
+/* الشاشات الكبيرة مثل اللابتوب والديسكتوب */
+@media (min-width: 1025px) {
+  .main-container h1 {
+    font-size: 4.4rem;
+  }
+
+  .main-container h2 {
+    font-size: 1.8rem;
+  }
+
+  .icons {
+    font-size: 3rem;
+    gap: 2rem;
+  }
+}

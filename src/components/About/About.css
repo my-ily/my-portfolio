@@ -1,0 +1,108 @@
+.about-container {
+  padding: 100px 40px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  min-height: 90vh;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00df9a;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.box {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 300px;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h3 {
+  color: #00d9ff;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+/* Responsive Design */
+
+/* للأجهزة الصغيرة مثل الجوال */
+@media (max-width: 600px) and (min-width: 200px) {
+  .about-container {
+    padding: 60px 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .about-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* للأجهزة المتوسطة مثل التابلت */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .about-container {
+    padding: 80px 30px;
+  }
+
+  .about-boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    flex: 0 1 45%;
+    margin-bottom: 20px;
+  }
+}
+
+/* للأجهزة الكبيرة */
+@media (min-width: 1025px) {
+  .about-boxes {
+    flex-direction: row;
+  }
+
+  .box {
+    flex: 0 1 30%;
+  }
+}
